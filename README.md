@@ -17,7 +17,7 @@ Small command line tool to manage godot versions.
 - build tool (godot uses scons which is nice to use on it's own)
 - project launcher (godot installations are added to the path and to the start menu, so
   use system tools to start stuff)
-- cross-platform (I use linux, if anyone want's to contribute other platforms I am more
+- cross-platform (I use linux, if anyone wants to contribute other platforms I am more
   than happy to add them!)
 
 ## Usage
