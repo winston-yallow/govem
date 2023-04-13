@@ -37,6 +37,9 @@ source .venv/bin/activate
 # Install package as local development package
 pip install --editable .
 
+# Crawl the tuxfamily mirror to generate list of available versions
+govem update
+
 # Use govem
 govem --help
 ```
