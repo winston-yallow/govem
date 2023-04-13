@@ -13,7 +13,8 @@ Small command line tool to manage godot versions.
 
 ### What this isn't
 - project manager (if you are looking for one, try
-  [Hourglass](https://hourglass.jwestman.net/))
+  [Godot Manager](https://github.com/eumario/godot-manager)
+  or [Hourglass](https://hourglass.jwestman.net/))
 - build tool (godot uses scons which is nice to use on it's own)
 - project launcher (godot installations are added to the path and to the start menu, so
   use system tools to start stuff)
