@@ -82,6 +82,8 @@ being said, here are some things I want to add over the next months:
 - add `govem refresh` subcommand for re-downloading or re-copying files for the
   installation
 - create a nice looking logo, preferably one that works as ASCII art
+- rename `--name` to `--identifier` or something similar, to make it clear that it's
+  only part of the full automatically generated name that starts with `Godot` as prefix
 - transfer this roadmap from the readme to actual actionable and detailed github issues
 
 ## License
