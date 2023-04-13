@@ -15,7 +15,7 @@ def is_valid_name(ctx, param, value):
     """
     # TODO: We can make this less strict to allow all characters that are
     # valid within directory names.
-    if value is None or re.match(r"^[\-\_\.\w\d]+$", value):
+    if value is None or re.match(r"^[ \-\_\.\w\d]+$", value):
         return value
     else:
         raise click.BadParameter(
