@@ -21,20 +21,28 @@ Small command line tool to manage godot versions.
   than happy to add them!)
 
 ## Usage
-This project currently uses [poetry](https://python-poetry.org/).
 There is no nice way yet to install `govem`, but here is how to test and develop it:
 
-### Commands
+### Setup
+The following commands assume that `python` is version 3.9 or later (on some distributions
+you may need to use `python3`).
 ```bash
-# Setup your local workspace with poetry. This will automatically create a venv
-poetry install
+# Setup your local workspace with a vritual environment
+python -m venv .venv
 
-# Run govem
-poetry run govem --help
+# Activate the vritual environment
+source .venv/bin/activate
 
-# Run black (used for consistent code-formatting)
-poetry run black
+# Install package as local development package
+pip install --editable .
+
+# Use govem
+govem --help
 ```
+
+### Install system wide
+You can manually create a symlink pointing to `.venv/bin/govem` in some location that is
+in your system `$PATH`. This will automatically run govem within the virtual environment.
 
 ### Configuration
 There is no config file yet. All settings are stored in `settings.py`. It is planned
@@ -68,8 +76,6 @@ this out for other people to use. The code may not be the best quality (though I
 to at least clean it up a bit), but it's a foundation that can be worked with. That
 being said, here are some things I want to add over the next months:
 - create proper configfile with sensible defaults for settings
-- use setuptools (it makes it easy to run `govem` inside a venv without explictly
-  activating the venv, which will also help with making govem easy to install)
 - refactor the downloading code (especialy make it work with mono versions)
 - make directory for desktopfile installations configurable
 - add `govem refresh` subcommand for re-downloading or re-copying files for the
