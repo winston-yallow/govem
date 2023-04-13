@@ -191,7 +191,7 @@ def create_desktopfile(name: str, workdir: Path, install: bool):
     if install:
         target = Path.home() / ".local/share/applications"
         subprocess.run(["desktop-file-install", f"--dir={target}", path])
-        subprocess.run(["update-desktop-database", target, path])
+        subprocess.run(["update-desktop-database", target])
         subprocess.run(["xdg-desktop-menu", "forceupdate"])
 
 
