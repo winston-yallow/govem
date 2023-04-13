@@ -3,6 +3,9 @@
 ## About
 Small command line tool to manage godot versions.
 
+[<img alt="Terminal recording showing the tool in use" src="demo.gif"/>](https://asciinema.org/a/577346)
+![Image of two different Godot versions being shown in the systems app launcher](demo.png)
+
 ### Features
 - fetch available downloads from tuxfamily.org
 - download and install godot (creating desktopfile and adding the executable to the path)
